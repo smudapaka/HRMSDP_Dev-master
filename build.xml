@@ -61,7 +61,7 @@
 <target name="sonar">
     <taskdef uri="antlib:org.sonar.ant" resource="org/sonar/ant/antlib.xml">
         <!-- Update the following line, or put the "sonarqube-ant-task-*.jar" file in your "$HOME/.ant/lib" folder -->
-        <classpath path="C:\Users\Dell\Documents\apache-ant-1.10.1\lib\sonarqube-ant-task-*.jar" />
+        <classpath path="C:\apache-ant-1.10.1\bin\sonarqube-ant-task-*.jar" />
 		
     </taskdef>
  
@@ -78,7 +78,7 @@
       <artifacts pattern="dist/HRMSDP.war" />
     </ivy:publish>
   </target>
-  <target name="copy.from.nexus">
+  <target name="copy.from.nexus">	
    <echo message="copying from nexus"/>    
    <get src="http://localhost:8081/nexus/service/local/repositories/releases/content/org/sonatype/nexus/examples/HRMDSP/1.0/HRMDSP-1.0.war" dest="C:\\Users\\Dell\\Desktop\\Demo\\apache-tomcat-8.5.11\\webappsHRMDSP-1.0.war"/>
 </target>
